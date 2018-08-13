@@ -1,8 +1,8 @@
 Package.describe({
-  name: 'aldeed:autoform',
+  name: 'd3k4y:autoform',
   summary: 'Easily create forms with automatic insert and update, and automatic reactive validation.',
-  git: 'https://github.com/aldeed/meteor-autoform.git',
-  version: '6.3.0'
+  git: 'https://github.com/d3k4y/meteor-autoform.git',
+  version: '6.4.0'
 });
 
 Package.onUse(function(api) {
@@ -35,6 +35,7 @@ Package.onUse(function(api) {
 
   // Exports
   api.export('AutoForm', 'client');
+  api.export('getAllFieldsInForm', 'client');
   api.export('Utility', 'client', { testOnly: true });
 
   // Client Files
